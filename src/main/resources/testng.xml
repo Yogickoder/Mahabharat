@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon Suite">
+
+	<listeners>
+		<listener class-name="vishal.amaze.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+
+	<test name="FirstRun">
+		<classes>
+			<class name="vishal.amaze.qa.testcases.HomepagebeforeLoginTest"></class>
+			<class name="vishal.amaze.qa.testcases.LoginPageTest"></class>
+			<class name="vishal.amaze.qa.testcases.HomepageafterLoginTest"></class>
+			<class name="vishal.amaze.qa.testcases.YourAccountTest"></class>
+		</classes>
+	</test>
+</suite>
