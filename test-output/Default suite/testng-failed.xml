@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="vishal.amaze.qa.testcases.LoginPageTest">
+      <class name="vishal.amaze.qa.testcases.YourAddressTest">
         <methods>
-          <include name="justLogin"/>
+          <include name="generate_AddAddress"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- vishal.amaze.qa.testcases.LoginPageTest -->
+      </class> <!-- vishal.amaze.qa.testcases.YourAddressTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

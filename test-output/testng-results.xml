@@ -1,66 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="237541" started-at="2019-06-16T10:08:01Z" finished-at="2019-06-16T10:11:58Z">
+  <suite name="Default suite" duration-ms="115805" started-at="2019-06-16T19:18:58Z" finished-at="2019-06-16T19:20:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="237541" started-at="2019-06-16T10:08:01Z" finished-at="2019-06-16T10:11:58Z">
-      <class name="vishal.amaze.qa.testcases.LoginPageTest">
-        <test-method status="FAIL" signature="setup()[pri:0, instance:vishal.amaze.qa.testcases.LoginPageTest@50b472aa]" name="setup" is-config="true" duration-ms="0" started-at="2019-06-16T15:38:01Z" finished-at="2019-06-16T15:38:01Z">
-          <exception class="java.lang.NoSuchFieldError">
-            <message>
-              <![CDATA[RETURN_BLANK_AS_NULL]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchFieldError: RETURN_BLANK_AS_NULL
-	at com.codoid.products.fillo.CommonExcelUtil.getColumnNames(CommonExcelUtil.java:85)
-	at com.codoid.products.fillo.SelectExcelUtil.runSelectQuery(SelectExcelUtil.java:85)
-	at com.codoid.products.fillo.Select.getRecordset(Select.java:61)
-	at com.codoid.products.fillo.Connection.executeQuery(Connection.java:64)
-	at vishal.amaze.qa.utility.FilloReader.getFilodata(FilloReader.java:22)
-	at vishal.amaze.qa.testcases.LoginPageTest.setup(LoginPageTest.java:35)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchFieldError -->
+    <test name="Default test" duration-ms="115805" started-at="2019-06-16T19:18:58Z" finished-at="2019-06-16T19:20:54Z">
+      <class name="vishal.amaze.qa.testcases.YourAddressTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="setup" is-config="true" duration-ms="28201" started-at="2019-06-17T00:48:59Z" finished-at="2019-06-17T00:49:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="justLogin()[pri:0, instance:vishal.amaze.qa.testcases.LoginPageTest@50b472aa]" name="justLogin" duration-ms="7383" started-at="2019-06-16T15:41:28Z" finished-at="2019-06-16T15:41:35Z">
+        <test-method status="PASS" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="generate_AddAddress" duration-ms="8204" started-at="2019-06-17T00:49:27Z" data-provider="Addressdata" finished-at="2019-06-17T00:49:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[vishal]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7506309851]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400050]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[HRA colony namely]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[goregaon malad]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[front of mannat]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[MUMBAI]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- justLogin -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:vishal.amaze.qa.testcases.LoginPageTest@50b472aa]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-06-16T15:41:37Z" finished-at="2019-06-16T15:41:37Z">
+        </test-method> <!-- generate_AddAddress -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="setup" is-config="true" duration-ms="22533" started-at="2019-06-17T00:49:35Z" finished-at="2019-06-17T00:49:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- vishal.amaze.qa.testcases.LoginPageTest -->
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="generate_AddAddress" duration-ms="9995" started-at="2019-06-17T00:49:58Z" data-provider="Addressdata" finished-at="2019-06-17T00:50:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[swapnali]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7501231234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400050]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Curry Road]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Andheri]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Front of curry station]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[MUMBAI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generate_AddAddress -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="setup" is-config="true" duration-ms="35732" started-at="2019-06-17T00:50:08Z" finished-at="2019-06-17T00:50:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="generate_AddAddress" duration-ms="10356" started-at="2019-06-17T00:50:44Z" data-provider="Addressdata" finished-at="2019-06-17T00:50:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arun]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7501254854]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[400050]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Pata nahi]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[station pe hi ghoomte rehte]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[phtatpathi]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[MUMBAI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generate_AddAddress -->
+      </class> <!-- vishal.amaze.qa.testcases.YourAddressTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

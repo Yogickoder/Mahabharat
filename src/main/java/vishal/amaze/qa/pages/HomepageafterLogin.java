@@ -16,7 +16,7 @@ public class HomepageafterLogin extends TestBase{
 	
 ////*[@class='nav-line-1'][text()='Hello, vishal']
 
-@FindBy(xpath = "//*[@class='nav-line-1'][text()='Hello, vishal']")
+@FindBy(xpath = "//*[@class='nav-line-1'][text()='Hello, Karna']")
 WebElement usersignedname;
 
 @FindBy(xpath="//*[@class='nav-text'][text()='Your Account']")
