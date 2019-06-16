@@ -32,7 +32,9 @@ public void setup() throws FilloException
 	loginpage = new LoginPage();
 	hmbeforelogin.clickSignIn();// as once this method is called it will return LoginPage class object.
 	fil = new FilloReader();
+	System.out.println("Going to execute Fillo code");
 	fil.getFilodata();
+	
 
 }
 
