@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="115805" started-at="2019-06-16T19:18:58Z" finished-at="2019-06-16T19:20:54Z">
+  <suite name="Default suite" duration-ms="46595" started-at="2019-06-17T19:05:28Z" finished-at="2019-06-17T19:06:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="115805" started-at="2019-06-16T19:18:58Z" finished-at="2019-06-16T19:20:54Z">
+    <test name="Default test" duration-ms="46595" started-at="2019-06-17T19:05:28Z" finished-at="2019-06-17T19:06:15Z">
       <class name="vishal.amaze.qa.testcases.YourAddressTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="setup" is-config="true" duration-ms="28201" started-at="2019-06-17T00:48:59Z" finished-at="2019-06-17T00:49:27Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="setup" is-config="true" duration-ms="19410" started-at="2019-06-18T00:35:28Z" finished-at="2019-06-18T00:35:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="generate_AddAddress" duration-ms="8204" started-at="2019-06-17T00:49:27Z" data-provider="Addressdata" finished-at="2019-06-17T00:49:35Z">
+        <test-method status="PASS" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="generate_AddAddress" duration-ms="8124" started-at="2019-06-18T00:35:49Z" data-provider="Addressdata" finished-at="2019-06-18T00:35:57Z">
           <params>
             <param index="0">
               <value>
@@ -52,11 +52,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generate_AddAddress -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="setup" is-config="true" duration-ms="22533" started-at="2019-06-17T00:49:35Z" finished-at="2019-06-17T00:49:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="generate_AddAddress" duration-ms="9995" started-at="2019-06-17T00:49:58Z" data-provider="Addressdata" finished-at="2019-06-17T00:50:08Z">
+        <test-method status="PASS" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="generate_AddAddress" duration-ms="8655" started-at="2019-06-18T00:35:57Z" data-provider="Addressdata" finished-at="2019-06-18T00:36:06Z">
           <params>
             <param index="0">
               <value>
@@ -97,11 +93,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generate_AddAddress -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="setup" is-config="true" duration-ms="35732" started-at="2019-06-17T00:50:08Z" finished-at="2019-06-17T00:50:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="generate_AddAddress" duration-ms="10356" started-at="2019-06-17T00:50:44Z" data-provider="Addressdata" finished-at="2019-06-17T00:50:54Z">
+        <test-method status="PASS" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="generate_AddAddress" duration-ms="9404" started-at="2019-06-18T00:36:06Z" data-provider="Addressdata" finished-at="2019-06-18T00:36:15Z">
           <params>
             <param index="0">
               <value>

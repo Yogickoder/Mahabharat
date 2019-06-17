@@ -2,6 +2,7 @@ package vishal.amaze.qa.testcases;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -32,7 +33,7 @@ public class YourAddressTest extends TestBase{
 		super();
 	}
 	
-	@BeforeMethod
+	@BeforeTest
 	public void setup() throws FilloException
 	  {
 		initialize();
@@ -46,11 +47,7 @@ public class YourAddressTest extends TestBase{
 		youradd = new YourAddress();
 		youracc.click_YourAddresses();
 		
-		
-		
-		
-		
-	  }
+	}
 	
 	@DataProvider(name = "Addressdata")
 	public Object[][] getAmzAdressdata()
@@ -63,7 +60,7 @@ public class YourAddressTest extends TestBase{
 	@Test(dataProvider="Addressdata")
 	public void generate_AddAddress(String fname,String mob,String pincde,String addln1, String addln2, String lndmark,String cty)
 	{
-		youradd.add_address();
+		youradd.add_Address();
 		youradd.fill_address_details(fname, mob, pincde, addln1, addln2, lndmark, cty);
 	}
 	

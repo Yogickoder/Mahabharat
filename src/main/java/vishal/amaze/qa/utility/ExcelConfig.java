@@ -70,7 +70,7 @@ public class ExcelConfig extends TestBase{
 		    	System.out.println("Cell data at "+"["+i+"]"+"["+k+"]"+" is = "+data[i][k]);
 		      }
 			}
-		   
+		//This will return the data one row at a time.   
 		return data;   
     }
 	
