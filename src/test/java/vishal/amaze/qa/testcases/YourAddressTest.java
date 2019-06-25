@@ -52,7 +52,7 @@ public class YourAddressTest extends TestBase{
 	@DataProvider(name = "Addressdata")
 	public Object[][] getAmzAdressdata()
 	{
-		Object[][] data = ExcelConfig.getTestdata("AmzAddAddress","C:\\Users\\DELL\\workspace\\Automation\\src\\sample\\Testdatapath\\Amazontestdata.xlsx");
+		Object[][] data = ExcelConfig.getTestdata("AmzAddAddress","C:\\Users\\DELL\\workspace\\MahabharatAll\\src\\test\\java\\inputFiles\\Amazontestdata.xlsx");
 		return data;
 		
 	}

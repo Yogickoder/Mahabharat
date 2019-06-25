@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 import vishal.amaze.qa.utility.TestUtil;
 import vishal.amaze.qa.utility.WebEventListener;
 
@@ -60,8 +61,6 @@ public static void initialize()
  event_listener = new WebEventListener();
  e_driver.register(event_listener);
  driver = e_driver;*/
- 
- 
  driver.manage().window().maximize();
  driver.manage().deleteAllCookies();
  driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
@@ -69,7 +68,7 @@ public static void initialize()
  driver.get(prop.getProperty("urlhomepage"));
  wait = new WebDriverWait(driver,30);
 
-  }
+ }
 
 }
 

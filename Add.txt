@@ -1,0 +1,33 @@
+1.Identify correctly as what all can be added in the properties files.            status  -- pending
+2.Increase the number of test cases by taking some complex requirements.          status  -- pending
+3.Learn about sauceLabs to the fullest.                                           status  -- pending
+4.Alternative for SauceLabs/BrowserStac for my own Implementation and learning    status  -- pending
+5.Learn about Jenkins full to the brim and implement the same.                    status  -- pending
+6.Implement the setWebDriver method with capabilities                             status  -- pending
+7.Establish Oracle database and implementation in the project.                    status  -- pending
+(As storing certain data , which you are fetching from Excel, or like storing the
+locators.)
+8.Create JSON data and reader with complete Implementation                        status  -- pending
+9.Improve your collections knowledge in Java and use them in your project         status  -- pending
+10.Apply various kind of checks and handling code where ever possible             status  -- pending
+by seeing existing projects and advice from experts.
+11.Parallely start creating the BDD project as your master will be gone soon.     status  -- pending
+12.Understand complete BDD from your only Master.                                 status  -- pending
+13.Enhance the utility section, in every aspect.                                  status  -- pending
+14.Work on the reporting part.                                                    status  -- pending
+15.Work on the execution part.                                                    status  -- pending
+16.Work on the failed test case rerun.                                            status  -- pending
+17.Runner class concept.                                                          status  -- pending
+18.Division of runner class as regression scenarios, sanity scenarios all that.   status  -- pending
+19.Locating or tracking of issues logger or debugging?                            status  -- pending
+20.Structuring your project.                                                      status  -- pending
+
+
+---------------------
+
+1.Open Shift Container.
+2.SauceLabs
+3.Jenkins
+
+
+

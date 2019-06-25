@@ -1,140 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46595" started-at="2019-06-17T19:05:28Z" finished-at="2019-06-17T19:06:15Z">
+  <suite name="Default suite" duration-ms="27830" started-at="2019-06-20T18:44:52Z" finished-at="2019-06-20T18:45:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46595" started-at="2019-06-17T19:05:28Z" finished-at="2019-06-17T19:06:15Z">
-      <class name="vishal.amaze.qa.testcases.YourAddressTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="setup" is-config="true" duration-ms="19410" started-at="2019-06-18T00:35:28Z" finished-at="2019-06-18T00:35:48Z">
+    <test name="Default test" duration-ms="27830" started-at="2019-06-20T18:44:52Z" finished-at="2019-06-20T18:45:20Z">
+      <class name="vishal.amaze.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:vishal.amaze.qa.testcases.LoginPageTest@4501b7af]" name="setup" is-config="true" duration-ms="16084" started-at="2019-06-21T00:14:52Z" finished-at="2019-06-21T00:15:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="generate_AddAddress" duration-ms="8124" started-at="2019-06-18T00:35:49Z" data-provider="Addressdata" finished-at="2019-06-18T00:35:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[vishal]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[7506309851]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[400050]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[HRA colony namely]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[goregaon malad]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[front of mannat]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[MUMBAI]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="PASS" signature="justLogin()[pri:0, instance:vishal.amaze.qa.testcases.LoginPageTest@4501b7af]" name="justLogin" duration-ms="5850" started-at="2019-06-21T00:15:08Z" finished-at="2019-06-21T00:15:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- generate_AddAddress -->
-        <test-method status="PASS" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="generate_AddAddress" duration-ms="8655" started-at="2019-06-18T00:35:57Z" data-provider="Addressdata" finished-at="2019-06-18T00:36:06Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[swapnali]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[7501231234]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[400050]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Curry Road]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Andheri]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Front of curry station]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[MUMBAI]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- justLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:vishal.amaze.qa.testcases.LoginPageTest@4501b7af]" name="tearDown" is-config="true" duration-ms="5876" started-at="2019-06-21T00:15:14Z" finished-at="2019-06-21T00:15:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- generate_AddAddress -->
-        <test-method status="PASS" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YourAddressTest@5e5792a0]" name="generate_AddAddress" duration-ms="9404" started-at="2019-06-18T00:36:06Z" data-provider="Addressdata" finished-at="2019-06-18T00:36:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Arun]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[7501254854]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[400050]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Pata nahi]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[station pe hi ghoomte rehte]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[phtatpathi]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[MUMBAI]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- generate_AddAddress -->
-      </class> <!-- vishal.amaze.qa.testcases.YourAddressTest -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- vishal.amaze.qa.testcases.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -15,7 +15,7 @@ public class FilloReader extends TestBase {
 	
 	Fillo fil = new Fillo();//Fillo is a class here and we created an object of the same.
 	
-	Connection connection = fil.getConnection("C:\\Users\\DELL\\workspace\\Automation\\src\\sample\\Testdatapath\\Amazontestdata.xlsx");
+	Connection connection = fil.getConnection("C:\\Users\\DELL\\workspace\\MahabharatAll\\src\\test\\java\\inputFiles\\Amazontestdata.xlsx");
 
 	String strq= "Select * from AmzAddAddress";
 	
