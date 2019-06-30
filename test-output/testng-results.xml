@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27830" started-at="2019-06-20T18:44:52Z" finished-at="2019-06-20T18:45:20Z">
+  <suite name="Default suite" duration-ms="32592" started-at="2019-06-30T18:05:26Z" finished-at="2019-06-30T18:05:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27830" started-at="2019-06-20T18:44:52Z" finished-at="2019-06-20T18:45:20Z">
+    <test name="Default test" duration-ms="32592" started-at="2019-06-30T18:05:26Z" finished-at="2019-06-30T18:05:59Z">
       <class name="vishal.amaze.qa.testcases.LoginPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:vishal.amaze.qa.testcases.LoginPageTest@4501b7af]" name="setup" is-config="true" duration-ms="16084" started-at="2019-06-21T00:14:52Z" finished-at="2019-06-21T00:15:08Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:vishal.amaze.qa.testcases.LoginPageTest@4501b7af]" name="setup" is-config="true" duration-ms="18007" started-at="2019-06-30T23:35:26Z" finished-at="2019-06-30T23:35:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="justLogin()[pri:0, instance:vishal.amaze.qa.testcases.LoginPageTest@4501b7af]" name="justLogin" duration-ms="5850" started-at="2019-06-21T00:15:08Z" finished-at="2019-06-21T00:15:14Z">
+        <test-method status="PASS" signature="justLogin()[pri:0, instance:vishal.amaze.qa.testcases.LoginPageTest@4501b7af]" name="justLogin" duration-ms="8087" started-at="2019-06-30T23:35:44Z" finished-at="2019-06-30T23:35:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- justLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:vishal.amaze.qa.testcases.LoginPageTest@4501b7af]" name="tearDown" is-config="true" duration-ms="5876" started-at="2019-06-21T00:15:14Z" finished-at="2019-06-21T00:15:20Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:vishal.amaze.qa.testcases.LoginPageTest@4501b7af]" name="tearDown" is-config="true" duration-ms="6477" started-at="2019-06-30T23:35:52Z" finished-at="2019-06-30T23:35:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
