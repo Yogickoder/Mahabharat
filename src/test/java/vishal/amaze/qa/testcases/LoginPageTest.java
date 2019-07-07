@@ -12,14 +12,14 @@ import vishal.amaze.qa.pages.Alllinks;
 import vishal.amaze.qa.pages.HomepagebeforeLogin;
 import vishal.amaze.qa.pages.LoginPage;
 import vishal.amaze.qa.utility.FilloReader;
-import vishal.amaze.qa.utility.WindowHandler;
+//import vishal.amaze.qa.utility.WindowHandler;
 
 public class LoginPageTest extends TestBase {
 	
 HomepagebeforeLogin hmbeforelogin;// we will need this object for calling methods of HomepagebeforeLogin.
 LoginPage loginpage;
 FilloReader fil;
-WindowHandler wha;
+//WindowHandler wha;
 	
 
 public LoginPageTest()
@@ -38,8 +38,8 @@ public void setup() throws Exception
 	fil = new FilloReader();
 	System.out.println("Going to execute Fillo code");
 	fil.getFilodata();
-	wha = new WindowHandler();
-	wha.wh();
+	//wha = new WindowHandler();
+	//wha.wh();
 	
 	//Alllinks all = new Alllinks();
 	

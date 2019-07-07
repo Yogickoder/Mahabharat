@@ -2,10 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Amazon Suite">
 
-	<listeners>
+	<!-- <listeners>
 		<listener class-name="vishal.amaze.qa.ExtentReportListener.ExtentReporterNG" />
 	</listeners>
-
+ -->
 
 	<test name="FirstRun">
 		<classes>
