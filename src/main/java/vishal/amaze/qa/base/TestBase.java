@@ -65,37 +65,81 @@ public static void initialize() throws MalformedURLException
   }
   else if(browsername.equals("remote"))
   {
-	    //As user has opted to run it on remote hence will make the hub and node up
+	    
+	  System.out.println("As user has opted to run it on remote hence making the hub and node up");
 	   
-	    //Making the Hub up on ip 4444 for this I have created a batch file and have written the commands in that.
+	  System.out.println("Making the Hub up on ip 4444 for this I have created a batch file and have written the commands in that.");  
 	  
-	    //ProcessBuilder processBuilder = new ProcessBuilder("C:\\Selenium Grid\\Selenium-grid_3.14_Hub_port_4444.bat");
-	  
-	    ProcessBuilder pb = new ProcessBuilder();
-		pb.command("cmd","/c","Selenium-grid_3.14_Hub_port_4444.bat");
-		File dir = new File("C:\\Selenium Grid\\");
-		pb.directory(dir);
-		try {
-			Thread.sleep(6000);
+	    //ProcessBuilder processBuilder = new ProcessBuilder("C://Selenium Grid//Selenium-grid_3.14_Hub_port_4444.bat");
+	  File dirhub = new File("C:\\Selenium Grid");
+      ProcessBuilder pbhub = new ProcessBuilder("cmd.exe", "/C", "Start","Selenium-grid_3.14_Hub_port_4444.bat");
+      pbhub.directory(dirhub);
+      
+      try {
+		Process prhub = pbhub.start();
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+      System.out.println("waiting for 5 secs so that Hub is fully up and running");
+      try {
+		Thread.sleep(6000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		Runtime rt = Runtime.getRuntime();
-		try {
-			rt.exec("cmd /c start" +"Selenium-grid_3.14_Hub_port_4444.bat");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	  
-		try {
-			Thread.sleep(6000);
+	    
+	    
+	    //  "C:\Selenium Grid\Selenium-grid_3.14_Hub_port_4444.bat"
+	  
+//	    ProcessBuilder pb = new ProcessBuilder();
+//		pb.command("cmd","/c","Selenium-grid_3.14_Hub_port_4444.bat");
+//		File dir = new File("C:\\Selenium Grid\\");
+//		pb.directory(dir);
+//		try {
+//			Thread.sleep(6000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		
+//		Runtime rt = Runtime.getRuntime();
+//		try {
+//			rt.exec("cmd /c start" +"Selenium-grid_3.14_Hub_port_4444.bat");
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//	  
+//		try {
+//			Thread.sleep(6000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace()
+//		}
+      
+      System.out.println("Now making the Chrome Node up and registering with hub");
+      
+      File dirchrome = new File("C:\\Selenium Grid");
+      ProcessBuilder pbchrome = new ProcessBuilder("cmd.exe", "/C", "Start","Selenium-grid_3.14_Chrome_node_port_4546.bat");
+      pbchrome.directory(dirchrome);
+     
+      try {
+		Process pchrome = pbchrome.start();
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+      
+      System.out.println("waiting for 5 secs so that Chrome node is registered and running.");
+      try {
+		Thread.sleep(6000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+      
 		
 	    nodeURL = "http://192.168.1.11:4546/wd/hub";
 		System.out.println("Chrome Browser Test Environment created");

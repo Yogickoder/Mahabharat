@@ -2,12 +2,12 @@
 <testng-results skipped="3" failed="0" total="3" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14758" started-at="2019-09-09T18:47:17Z" finished-at="2019-09-09T18:47:32Z">
+  <suite name="Default suite" duration-ms="3329" started-at="2019-09-09T19:53:07Z" finished-at="2019-09-09T19:53:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14758" started-at="2019-09-09T18:47:17Z" finished-at="2019-09-09T18:47:32Z">
+    <test name="Default test" duration-ms="3329" started-at="2019-09-09T19:53:07Z" finished-at="2019-09-09T19:53:11Z">
       <class name="vishal.amaze.qa.testcases.YrAddressTst">
-        <test-method status="FAIL" signature="setup()[pri:0, instance:vishal.amaze.qa.testcases.YrAddressTst@3532ec19]" name="setup" is-config="true" duration-ms="0" started-at="2019-09-10T00:17:17Z" finished-at="2019-09-10T00:17:17Z">
+        <test-method status="FAIL" signature="setup()[pri:0, instance:vishal.amaze.qa.testcases.YrAddressTst@3532ec19]" name="setup" is-config="true" duration-ms="0" started-at="2019-09-10T01:23:07Z" finished-at="2019-09-10T01:23:07Z">
           <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
@@ -24,7 +24,7 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-	at vishal.amaze.qa.base.TestBase.initialize(TestBase.java:106)
+	at vishal.amaze.qa.base.TestBase.initialize(TestBase.java:118)
 	at vishal.amaze.qa.testcases.YrAddressTst.setup(YrAddressTst.java:44)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -91,7 +91,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YrAddressTst@3532ec19]" name="generate_AddAddress" duration-ms="2" started-at="2019-09-10T00:17:32Z" data-provider="Addressdata" finished-at="2019-09-10T00:17:32Z">
+        <test-method status="SKIP" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YrAddressTst@3532ec19]" name="generate_AddAddress" duration-ms="2" started-at="2019-09-10T01:23:11Z" data-provider="Addressdata" finished-at="2019-09-10T01:23:11Z">
           <params>
             <param index="0">
               <value>
@@ -132,7 +132,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generate_AddAddress -->
-        <test-method status="SKIP" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YrAddressTst@3532ec19]" name="generate_AddAddress" duration-ms="2" started-at="2019-09-10T00:17:32Z" data-provider="Addressdata" finished-at="2019-09-10T00:17:32Z">
+        <test-method status="SKIP" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YrAddressTst@3532ec19]" name="generate_AddAddress" duration-ms="4" started-at="2019-09-10T01:23:11Z" data-provider="Addressdata" finished-at="2019-09-10T01:23:11Z">
           <params>
             <param index="0">
               <value>
@@ -173,7 +173,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generate_AddAddress -->
-        <test-method status="SKIP" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YrAddressTst@3532ec19]" name="generate_AddAddress" duration-ms="2" started-at="2019-09-10T00:17:32Z" data-provider="Addressdata" finished-at="2019-09-10T00:17:32Z">
+        <test-method status="SKIP" signature="generate_AddAddress(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:vishal.amaze.qa.testcases.YrAddressTst@3532ec19]" name="generate_AddAddress" duration-ms="2" started-at="2019-09-10T01:23:11Z" data-provider="Addressdata" finished-at="2019-09-10T01:23:11Z">
           <params>
             <param index="0">
               <value>
