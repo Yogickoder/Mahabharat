@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import vishal.amaze.qa.base.TestBase;
 import vishal.amaze.qa.utility.Flasher;
 
-public class LoginPage extends TestBase {
+public class LginPge extends TestBase {
 	
 //Page Factory or Object Repository
 	
@@ -24,7 +24,7 @@ WebElement login1;*/
 
 //String OTPFlag;
 	
-public LoginPage()//constructor for initializing the webElements.
+public LginPge()//constructor for initializing the webElements.
 	{
 		PageFactory.initElements(driver, this);
 	}
@@ -46,7 +46,7 @@ public void Login(String un, String pswd)
 	initialize them at top object repository*/
 	
 	WebElement password = driver.findElement(By.name("password"));
-    WebElement signin = driver.findElement(By.className("a-button-input"));// you can use driver.findelements its totally fine in Page Factory.
+   // WebElement signin = driver.findElement(By.className("a-button-input"));// you can use driver.findelements its totally fine in Page Factory.
     WebElement login1 = driver.findElement(By.xpath("//input[@id='signInSubmit']"));
     wait.until(ExpectedConditions.elementToBeClickable(password)).sendKeys(prop.getProperty("password"));
     Flasher.highLightElement(driver, password);

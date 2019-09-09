@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import vishal.amaze.qa.base.TestBase;
 
-public class YourAccount extends TestBase {
+public class YrAccount extends TestBase {
 	
 	@FindBy(xpath = "//img[@alt='Your Addresses']")
 	WebElement YourAddresses;
@@ -26,7 +26,7 @@ public class YourAccount extends TestBase {
 	@FindBy(xpath = "//img[@alt='Amazon Pay balance']")
 	WebElement AmazonpayBalance;
 	
-	public YourAccount() //constructor for initializing the webElements.
+	public YrAccount() //constructor for initializing the webElements.
 	  {
 		PageFactory.initElements(driver, this);
 	  }

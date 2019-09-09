@@ -1,7 +1,10 @@
 package vishal.amaze.qa.testcases;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import java.io.File;
+import java.net.MalformedURLException;
+
+//import org.testng.annotations.AfterMethod;
+//import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -9,42 +12,44 @@ import org.testng.annotations.Test;
 import com.codoid.products.exception.FilloException;
 
 import vishal.amaze.qa.base.TestBase;
-import vishal.amaze.qa.pages.HomepageafterLogin;
-import vishal.amaze.qa.pages.HomepagebeforeLogin;
-import vishal.amaze.qa.pages.LoginPage;
-import vishal.amaze.qa.pages.YourAccount;
-import vishal.amaze.qa.pages.YourAddress;
+import vishal.amaze.qa.pages.HpgafterLgn;
+import vishal.amaze.qa.pages.HpgbfreLgn;
+import vishal.amaze.qa.pages.LginPge;
+import vishal.amaze.qa.pages.YrAccount;
+import vishal.amaze.qa.pages.YrAddress;
 import vishal.amaze.qa.utility.ExcelConfig;
 import vishal.amaze.qa.utility.FilloReader;
 
-public class YourAddressTest extends TestBase{
+public class YrAddressTst extends TestBase{
 	
 	
-	HomepagebeforeLogin hmbeforelogin;
-	LoginPage loginpage;
-	HomepageafterLogin hmafterlogin;
-	YourAccount youracc;
-	YourAddress youradd;
+	HpgbfreLgn hmbeforelogin;
+	LginPge loginpage;
+	HpgafterLgn hmafterlogin;
+	YrAccount youracc;
+	YrAddress youradd;
 	FilloReader fil;
 	
 	
-	public YourAddressTest()
+	public YrAddressTst()
 	{
 		super();
 	}
 	
 	@BeforeTest
-	public void setup() throws FilloException
+	public void setup() throws FilloException, MalformedURLException
 	  {
+		//ProcessBuilder pb = new ProcessBuilder("C:\\Selenium Grid\\Selenium-grid_3.14_Hub_port_4444.bat");
+		
 		initialize();
-		hmbeforelogin = new HomepagebeforeLogin();
+		hmbeforelogin = new HpgbfreLgn();
 		hmbeforelogin.clickSignIn();
-		loginpage = new LoginPage();
+		loginpage = new LginPge();
 		loginpage.Login(prop.getProperty("username"), prop.getProperty("password"));
-		hmafterlogin = new HomepageafterLogin();
+		hmafterlogin = new HpgafterLgn();
 		hmafterlogin.inYourAccount();
-		youracc = new YourAccount();
-		youradd = new YourAddress();
+		youracc = new YrAccount();
+		youradd = new YrAddress();
 		youracc.click_YourAddresses();
 		
 	}

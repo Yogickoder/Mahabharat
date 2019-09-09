@@ -1,38 +1,40 @@
 package vishal.amaze.qa.testcases;
 
+import java.net.MalformedURLException;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import vishal.amaze.qa.base.TestBase;
-import vishal.amaze.qa.pages.HomepageafterLogin;
-import vishal.amaze.qa.pages.HomepagebeforeLogin;
-import vishal.amaze.qa.pages.LoginPage;
-import vishal.amaze.qa.pages.YourAccount;
+import vishal.amaze.qa.pages.HpgafterLgn;
+import vishal.amaze.qa.pages.HpgbfreLgn;
+import vishal.amaze.qa.pages.LginPge;
+import vishal.amaze.qa.pages.YrAccount;
 
-public class YourAccountTest extends TestBase{
+public class YrAccountTst extends TestBase{
 	
-	HomepagebeforeLogin hmbeforelogin;
-	LoginPage loginpage;
-	HomepageafterLogin hmafterlogin;
-	YourAccount youracc;
+	HpgbfreLgn hmbeforelogin;
+	LginPge loginpage;
+	HpgafterLgn hmafterlogin;
+	YrAccount youracc;
 	
-	public YourAccountTest()
+	public YrAccountTst()
 	{
 		super();
 	}
 	
 	@BeforeMethod
-	public void setup()
+	public void setup() throws MalformedURLException
 	  {
 		initialize();
-		hmbeforelogin = new HomepagebeforeLogin();
+		hmbeforelogin = new HpgbfreLgn();
 		hmbeforelogin.clickSignIn();
-		loginpage = new LoginPage();
+		loginpage = new LginPge();
 		loginpage.Login(prop.getProperty("username"), prop.getProperty("password"));
-		hmafterlogin = new HomepageafterLogin();
+		hmafterlogin = new HpgafterLgn();
 		hmafterlogin.inYourAccount();
-		youracc = new YourAccount();
+		youracc = new YrAccount();
 		
 		
 	  }

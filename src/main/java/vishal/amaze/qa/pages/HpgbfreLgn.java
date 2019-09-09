@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import vishal.amaze.qa.base.TestBase;
 import vishal.amaze.qa.utility.Flasher;
 
-public class HomepagebeforeLogin extends TestBase{
+public class HpgbfreLgn extends TestBase{
 	
 //will declare the variables here or Object Repository.
 
@@ -24,7 +24,7 @@ WebElement Signinclick;
 @FindBy(xpath = "//*[@id='twotabsearchtextbox']")
 WebElement searchbox;
 
-public HomepagebeforeLogin() //constructor for initializing the webElements.
+public HpgbfreLgn() //constructor for initializing the webElements.
   {
 	PageFactory.initElements(driver, this);
   }

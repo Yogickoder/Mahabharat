@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 import vishal.amaze.qa.base.TestBase;
 import vishal.amaze.qa.utility.Flasher;
 
-public class YourAddress extends TestBase{
+public class YrAddress extends TestBase{
 	
 	@FindBy(xpath = "//*[text()='Add address']")
 	WebElement AddAdress;
@@ -48,7 +48,7 @@ public class YourAddress extends TestBase{
 	
 	//*[@name='address-ui-widgets-countryCode']
 	
-	public YourAddress() //constructor for initializing the webElements.
+	public YrAddress() //constructor for initializing the webElements.
 	  {
 		PageFactory.initElements(driver, this);
 	  }
@@ -151,12 +151,12 @@ public class YourAddress extends TestBase{
 	public void fill_address_details(String fname,String mob,String pincde,String addln1, String addln2, String lndmark,String cty)
 	{
 		String strUpAdd = "Update your address ";
-		String strDupAdd = "You've submitted an address that is already in your address book.";
-		String strAddsave ="Address saved";
-		String strAddDelete ="Address deleted";
+		//String strDupAdd = "You've submitted an address that is already in your address book.";
+		//String strAddsave ="Address saved";
+		//String strAddDelete ="Address deleted";
 		String strstate = "MAHARASHTRA";
 		
-		YourAddress youradd = new YourAddress();// Object created
+		YrAddress youradd = new YrAddress();// Object created
 		// will call the locators methods in sequence
 		youradd.enter_Fullname(fname);
 		youradd.enter_MobileNum(mob);

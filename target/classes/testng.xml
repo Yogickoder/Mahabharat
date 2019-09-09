@@ -11,8 +11,8 @@
 		<classes>
 			<class name="vishal.amaze.qa.testcases.HomepagebeforeLoginTest"></class>
 			<class name="vishal.amaze.qa.testcases.LoginPageTest"></class>
-			<class name="vishal.amaze.qa.testcases.HomepageafterLoginTest"></class>
-			<class name="vishal.amaze.qa.testcases.YourAccountTest"></class>
-		</classes>
+			<!-- <class name="vishal.amaze.qa.testcases.HomepageafterLoginTest"></class>
+			<class name="vishal.amaze.qa.testcases.YourAccountTest"></class>-->		
+			</classes>
 	</test>
 </suite>

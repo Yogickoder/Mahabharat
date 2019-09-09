@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import vishal.amaze.qa.base.TestBase;
 
-public class HomepageafterLogin extends TestBase{
+public class HpgafterLgn extends TestBase{
 	
 //Declaring all variables	//*[@id="nav-link-yourAccount"]/span[2]
 //@FindBy(xpath = "//*[@id='nav-link-yourAccount']/span[2]")	
@@ -25,7 +25,7 @@ WebElement youraccount;
 @FindBy(xpath ="//*[@id='nav-your-amazon-text']")
 WebElement myamaozn;
 	
-public HomepageafterLogin()//constructor for initializing the webElements.
+public HpgafterLgn()//constructor for initializing the webElements.
     {
 	PageFactory.initElements(driver,this);
 	}
@@ -38,7 +38,21 @@ public void inYourAccount()//This will click on youraccount and new landing page
 	act.moveToElement(youraccount).build().perform();
 	act.click(youraccount).perform();
 	//return new YourAccount();//Landing page is your account
-	
+}
+
+public boolean verifySignin()
+{
+if(usersignedname.getText().contains("Karna"))
+{
+	System.out.println("Sign in successfull");
+	return true;
+}
+else
+{
+	System.out.println("Sign in failed, not in Sign in page");
+	return false;
+}
+
 }
 
 public String verifyTitle()

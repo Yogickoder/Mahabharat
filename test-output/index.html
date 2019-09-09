@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-skipped">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\DELL\AppData\Local\Temp\testng-eclipse--1813236570\testng-customsuite.xml</span>
+                    <span>C:\Users\DELL\AppData\Local\Temp\testng-eclipse-1091726612\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,31 +90,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods,  3 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content skipped suite-Default_suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="vishal.amaze.qa.testcases.YourAddressTest" hash-for-method="generate_AddAddress(vishal, 7506309851, 400050, HRA colony namely, goregaon malad, front of mannat, MUMBAI)">generate_AddAddress(vishal, 7506309851, 400050, HRA colony namely, goregaon malad, front of mannat, MUMBAI)</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="vishal.amaze.qa.testcases.YrAddressTst" hash-for-method="generate_AddAddress(Arun, 7501254854, 400050, Pata nahi, station pe hi ghoomte rehte, phtatpathi, MUMBAI)">generate_AddAddress(Arun, 7501254854, 400050, Pata nahi, station pe hi ghoomte rehte, phtatpathi, MUMBAI)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="vishal.amaze.qa.testcases.YourAddressTest" hash-for-method="generate_AddAddress(swapnali, 7501231234, 400050, Curry Road, Andheri, Front of curry station, MUMBAI)">generate_AddAddress(swapnali, 7501231234, 400050, Curry Road, Andheri, Front of curry station, MUMBAI)</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="vishal.amaze.qa.testcases.YrAddressTst" hash-for-method="generate_AddAddress(vishal, 7506309851, 400050, HRA colony namely, goregaon malad, front of mannat, MUMBAI)">generate_AddAddress(vishal, 7506309851, 400050, HRA colony namely, goregaon malad, front of mannat, MUMBAI)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="vishal.amaze.qa.testcases.YourAddressTest" hash-for-method="generate_AddAddress(Arun, 7501254854, 400050, Pata nahi, station pe hi ghoomte rehte, phtatpathi, MUMBAI)">generate_AddAddress(Arun, 7501254854, 400050, Pata nahi, station pe hi ghoomte rehte, phtatpathi, MUMBAI)</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="vishal.amaze.qa.testcases.YrAddressTst" hash-for-method="generate_AddAddress(swapnali, 7501231234, 400050, Curry Road, Andheri, Front of curry station, MUMBAI)">generate_AddAddress(swapnali, 7501231234, 400050, Curry Road, Andheri, Front of curry station, MUMBAI)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -126,12 +126,20 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">vishal.amaze.qa.testcases.YourAddressTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">vishal.amaze.qa.testcases.YrAddressTst</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="generate_AddAddress(Arun, 7501254854, 400050, Pata nahi, station pe hi ghoomte rehte, phtatpathi, MUMBAI)">
+                  </a> <!-- generate_AddAddress(Arun, 7501254854, 400050, Pata nahi, station pe hi ghoomte rehte, phtatpathi, MUMBAI) -->
+                  <span class="method-name">generate_AddAddress</span>
+                  <span class="parameters">(Arun, 7501254854, 400050, Pata nahi, station pe hi ghoomte rehte, phtatpathi, MUMBAI)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="generate_AddAddress(vishal, 7506309851, 400050, HRA colony namely, goregaon malad, front of mannat, MUMBAI)">
@@ -148,20 +156,12 @@
                   <span class="parameters">(swapnali, 7501231234, 400050, Curry Road, Andheri, Front of curry station, MUMBAI)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="generate_AddAddress(Arun, 7501254854, 400050, Pata nahi, station pe hi ghoomte rehte, phtatpathi, MUMBAI)">
-                  </a> <!-- generate_AddAddress(Arun, 7501254854, 400050, Pata nahi, station pe hi ghoomte rehte, phtatpathi, MUMBAI) -->
-                  <span class="method-name">generate_AddAddress</span>
-                  <span class="parameters">(Arun, 7501254854, 400050, Pata nahi, station pe hi ghoomte rehte, phtatpathi, MUMBAI)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-skipped -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\DELL\AppData\Local\Temp\testng-eclipse--1813236570\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\DELL\AppData\Local\Temp\testng-eclipse-1091726612\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -170,7 +170,7 @@
 &lt;suite name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;vishal.amaze.qa.testcases.YourAddressTest&quot;/&gt;
+      &lt;class name=&quot;vishal.amaze.qa.testcases.YrAddressTst&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -213,21 +213,21 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'generate_AddAddress')
-data.setCell(0, 2, 'vishal.amaze.qa.testcases.YourAddressTest')
-data.setCell(0, 3, 12219);
+data.setCell(0, 2, 'vishal.amaze.qa.testcases.YrAddressTst')
+data.setCell(0, 3, 2);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'generate_AddAddress')
-data.setCell(1, 2, 'vishal.amaze.qa.testcases.YourAddressTest')
-data.setCell(1, 3, 10639);
+data.setCell(1, 2, 'vishal.amaze.qa.testcases.YrAddressTst')
+data.setCell(1, 3, 2);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'generate_AddAddress')
-data.setCell(2, 2, 'vishal.amaze.qa.testcases.YourAddressTest')
-data.setCell(2, 3, 9528);
+data.setCell(2, 2, 'vishal.amaze.qa.testcases.YrAddressTst')
+data.setCell(2, 3, 2);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 6 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -253,22 +253,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">vishal.amaze.qa.testcases.YourAddressTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">vishal.amaze.qa.testcases.YrAddressTst</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">generate_AddAddress(vishal, 7506309851, 400050, HRA colony namely, goregaon malad, front of mannat, MUMBAI)</span>
-                <span class="method-start">64238 ms</span>
+                <span class="method-start">14742 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">generate_AddAddress(swapnali, 7501231234, 400050, Curry Road, Andheri, Front of curry station, MUMBAI)</span>
-                <span class="method-start">73768 ms</span>
+                <span class="method-start">14745 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">generate_AddAddress(Arun, 7501254854, 400050, Pata nahi, station pe hi ghoomte rehte, phtatpathi, MUMBAI)</span>
-                <span class="method-start">85988 ms</span>
+                <span class="method-start">14748 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

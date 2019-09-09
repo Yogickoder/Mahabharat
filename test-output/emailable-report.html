@@ -31,15 +31,114 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">96.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">0</td><td class="numi">14.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="3">vishal.amaze.qa.testcases.YourAddressTest</td><td><a href="#m1"><b>generate_AddAddress</b>  </a></td><td class="numi">3</td><td>1562487394857</td><td class="numi">32389</td></tr><tr class="passedodd"><td><a href="#m2"><b>generate_AddAddress</b>  </a></td><td class="numi">3</td><td>1562487394857</td><td class="numi">32389</td></tr><tr class="passedodd"><td><a href="#m3"><b>generate_AddAddress</b>  </a></td><td class="numi">3</td><td>1562487394857</td><td class="numi">32389</td></tr>
+<tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">vishal.amaze.qa.testcases.YrAddressTst</td><td><a href="#m1"><b>setup</b>  </a></td><td class="numi">1</td><td>1568054837462</td><td class="numi">0</td></tr>
+<tr><th colspan="4">Default test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="3">vishal.amaze.qa.testcases.YrAddressTst</td><td><a href="#m2"><b>generate_AddAddress</b>  </a></td><td class="numi">3</td><td>1568054852204</td><td class="numi">8</td></tr><tr class="skippedodd"><td><a href="#m3"><b>generate_AddAddress</b>  </a></td><td class="numi">3</td><td>1568054852204</td><td class="numi">8</td></tr><tr class="skippedodd"><td><a href="#m4"><b>generate_AddAddress</b>  </a></td><td class="numi">3</td><td>1568054852204</td><td class="numi">8</td></tr>
 </table>
 <h1>Default test</h1>
-<h2 id="m1">vishal.amaze.qa.testcases.YourAddressTest:generate_AddAddress</h2>
+<h2 id="m1">vishal.amaze.qa.testcases.YrAddressTst:setup</h2>
+<div style="padding-left:3em">
+<p>Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ABACUS&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+<br/>at vishal.amaze.qa.base.TestBase.initialize(TestBase.java:106)
+<br/>at vishal.amaze.qa.testcases.YrAddressTst.setup(YrAddressTst.java:44)
+<br/>23 lines not shown
+<p>Caused by Failed to connect to /192.168.1.11:4546</p>
+okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
+<br/>at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+<br/>at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+<br/>at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+<br/>at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+<br/>at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+<br/>at okhttp3.RealCall.execute(RealCall.java:77)
+<br/>at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+<br/>at vishal.amaze.qa.base.TestBase.initialize(TestBase.java:106)
+<br/>at vishal.amaze.qa.testcases.YrAddressTst.setup(YrAddressTst.java:44)
+<br/>23 lines not shown
+<p>Caused by Connection refused: connect</p>
+java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+<br/>at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+<br/>at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+<br/>at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+<br/>at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+<br/>at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+<br/>at java.net.Socket.connect(Socket.java:589)
+<br/>at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+<br/>at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+<br/>at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+<br/>at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+<br/>at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+<br/>at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+<br/>at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+<br/>at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+<br/>at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+<br/>at okhttp3.RealCall.execute(RealCall.java:77)
+<br/>at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:105)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+<br/>at vishal.amaze.qa.base.TestBase.initialize(TestBase.java:106)
+<br/>at vishal.amaze.qa.testcases.YrAddressTst.setup(YrAddressTst.java:44)
+<br/>23 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">vishal.amaze.qa.testcases.YrAddressTst:generate_AddAddress</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr>
+<tr class="param stripe"><td>Arun</td>
+<td>7501254854</td>
+<td>400050</td>
+<td>Pata nahi</td>
+<td>station pe hi ghoomte rehte</td>
+<td>phtatpathi</td>
+<td>MUMBAI</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">vishal.amaze.qa.testcases.YrAddressTst:generate_AddAddress</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr>
 <tr class="param stripe"><td>vishal</td>
@@ -52,7 +151,7 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m2">vishal.amaze.qa.testcases.YourAddressTest:generate_AddAddress</h2>
+<h2 id="m4">vishal.amaze.qa.testcases.YrAddressTst:generate_AddAddress</h2>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr>
 <tr class="param stripe"><td>swapnali</td>
@@ -61,19 +160,6 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <td>Curry Road</td>
 <td>Andheri</td>
 <td>Front of curry station</td>
-<td>MUMBAI</td>
-</tr>
-</table>
-<p class="totop"><a href="#summary">back to summary</a></p>
-<h2 id="m3">vishal.amaze.qa.testcases.YourAddressTest:generate_AddAddress</h2>
-<table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr>
-<tr class="param stripe"><td>Arun</td>
-<td>7501254854</td>
-<td>400050</td>
-<td>Pata nahi</td>
-<td>station pe hi ghoomte rehte</td>
-<td>phtatpathi</td>
 <td>MUMBAI</td>
 </tr>
 </table>

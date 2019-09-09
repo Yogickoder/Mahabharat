@@ -1,36 +1,38 @@
 package vishal.amaze.qa.testcases;
 
-import org.testng.Assert;
+import java.net.MalformedURLException;
+
+//import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import vishal.amaze.qa.base.TestBase;
-import vishal.amaze.qa.pages.HomepageafterLogin;
-import vishal.amaze.qa.pages.HomepagebeforeLogin;
-import vishal.amaze.qa.pages.LoginPage;
+import vishal.amaze.qa.pages.HpgafterLgn;
+import vishal.amaze.qa.pages.HpgbfreLgn;
+import vishal.amaze.qa.pages.LginPge;
 
 
-public class HomepageafterLoginTest extends TestBase {
+public class HpgafterLgnTst extends TestBase {
 	
-HomepagebeforeLogin hmbeforelogin;
-LoginPage loginpage;
-HomepageafterLogin hmafterlogin;
+HpgbfreLgn hmbeforelogin;
+LginPge loginpage;
+HpgafterLgn hmafterlogin;
 	
-public HomepageafterLoginTest()
+public HpgafterLgnTst()
  {
  super();
  }
 	
 @BeforeMethod
-public void setup()
+public void setup() throws MalformedURLException
   {
 	initialize();
-	hmbeforelogin = new HomepagebeforeLogin();
+	hmbeforelogin = new HpgbfreLgn();
 	hmbeforelogin.clickSignIn();
-	loginpage = new LoginPage();
+	loginpage = new LginPge();
 	loginpage.Login(prop.getProperty("username"), prop.getProperty("password"));
-	hmafterlogin = new HomepageafterLogin();
+	hmafterlogin = new HpgafterLgn();
   }
 	
 /*@Test(priority=1)
